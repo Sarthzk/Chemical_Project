@@ -1,0 +1,30 @@
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin: 18px 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-links a,
+.nav-links a:visited {           /* ← important: overrides purple visited color */
+  color: #111;                   /* solid black */
+  text-decoration: none;
+  transition: color .2s ease, transform .15s ease;
+}
+
+.nav-links a:hover {
+  color: #2b2b2b;
+  transform: translateY(-1px);
+}
+
+/* optional: subtle divider under the nav */
+.nav-divider {
+  max-width: 980px;
+  margin: 6px auto 0;
+  height: 1px;
+  background: rgba(0,0,0,.08);
+  border-radius: 1px;
+}

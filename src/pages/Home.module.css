@@ -1,0 +1,183 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  padding: 40px;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f4f4f5 60%, #e0e7ff 100%);
+  color: #1a1a1a;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative SVG background shapes */
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at 70% 30%, #a5b4fc 0%, transparent 70%);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle at 30% 70%, #818cf8 0%, transparent 70%);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #170da1 40%, #818cf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.ctaButtons {
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn {
+  background-color: #170da1;
+  color: white;
+  padding: 12px 24px;
+  margin: 8px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(23, 13, 161, 0.08);
+}
+
+.btn:hover {
+  background-color: #535360;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(23, 13, 161, 0.15);
+}
+
+.searchBox {
+  text-align: center;
+  margin: 50px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.searchBar input {
+  padding: 10px;
+  width: 260px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 4px rgba(129, 140, 248, 0.08);
+}
+
+.searchBar button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #170da1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.searchBar button:hover {
+  background: linear-gradient(90deg, #170da1 60%, #818cf8 100%);
+}
+
+.resultCard {
+  background-color: white;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  border-left: 6px solid #818cf8;
+  position: relative;
+  z-index: 1;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  text-align: left;
+  border-top: 4px solid #a5b4fc;
+  position: relative;
+  z-index: 1;
+}
+
+/* Add a decorative divider */
+.divider {
+  width: 80px;
+  height: 6px;
+  background: linear-gradient(90deg, #818cf8 0%, #170da1 100%);
+  border-radius: 3px;
+  margin: 40px auto;
+  opacity: 0.7;
+}
+
+.centerCard {
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(129, 140, 248, 0.12);
+  padding: 40px 32px;
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}

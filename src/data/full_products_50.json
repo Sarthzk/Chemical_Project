@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Colgate Total Advanced Health Toothpaste",
+    "category": "Personal Care",
+    "chemicals": [
+      { "name": "Sodium Lauryl Sulfate (SLS)", "info": "Foaming detergent; can irritate oral mucosa in some people." },
+      { "name": "Sodium Fluoride", "info": "Anti-cavity agent; toxic if swallowed in large amounts." }
+    ],
+    "alternatives": [
+      "Sensodyne SLS-Free Toothpaste",
+      "Himalaya Botanique Toothpaste"
+    ]
+  },
+  {
+    "name": "Sensodyne Rapid Relief Toothpaste",
+    "category": "Personal Care",
+    "chemicals": [
+      { "name": "Stannous Fluoride", "info": "Active for sensitivity relief; may stain if not stabilized." },
+      { "name": "Sodium Tripolyphosphate", "info": "Helps lift/prevent surface stains." }
+    ],
+    "alternatives": [
+      "SLS-free fluoride toothpaste (gentle)",
+      "Tom’s of Maine Rapid Relief"
+    ]
+  },
+  {
+    "name": "Dove Cream Beauty Bathing Bar",
+    "category": "Personal Care",
+    "chemicals": [
+      { "name": "Sodium Cocoyl Isethionate", "info": "Primary cleanser; milder but can irritate very sensitive skin." },
+      { "name": "Cocamidopropyl Betaine", "info": "Cleansing/foam booster; known allergen for a small subset." }
+    ],
+    "alternatives": [
+      "Fragrance-free syndet bar (sensitive skin)",
+      "Cetaphil Gentle Cleansing Bar"
+    ]
+  },
+  {
+    "name": "Head & Shoulders Anti-Dandruff Shampoo",
+    "category": "Personal Care",
+    "chemicals": [
+      { "name": "Zinc Pyrithione (ZPT)", "info": "Anti-dandruff active; tackles Malassezia yeast." },
+      { "name": "Sodium Laureth Sulfate (SLES)", "info": "Detergent; can be drying/irritating in some users." }
+    ],
+    "alternatives": [
+      "Ketoconazole 1% anti-dandruff shampoo",
+      "Salicylic-acid dandruff shampoo"
+    ]
+  },
+  {
+    "name": "Pantene Pro-V Hair Fall Control Shampoo",
+    "category": "Personal Care",
+    "chemicals": [
+      { "name": "Sodium Laureth Sulfate (SLES)", "info": "Primary cleanser; may strip oils in some hair types." },
+      { "name": "Dimethicone", "info": "Silicone for slip; can build up without clarifying." }
+    ],
+    "alternatives": [
+      "Sulfate-free strengthening shampoo",
+      "Gentle cleanser + weekly bond-repair mask"
+    ]
+  },
+  {
+    "name": "Nivea Soft Light Moisturizer",
+    "category": "Personal Care",
+    "chemicals": [
+      { "name": "Paraffinum Liquidum (Mineral Oil)", "info": "Occlusive; can feel heavy or comedogenic for some." },
+      { "name": "Alcohol Denat.", "info": "Can be drying/irritating for sensitive skin." }
+    ],
+    "alternatives": [
+      "Light gel-cream with glycerin + hyaluronic acid",
+      "Plant-oil based moisturizer (jojoba/squalane)"
+    ]
+  },
+  {
+    "name": "Surf Excel Matic Front Load Detergent Powder",
+    "category": "Household",
+    "chemicals": [
+      { "name": "Sodium Alkylbenzene Sulfonate (LAS)", "info": "Anionic surfactant; harsh to skin & aquatic life." },
+      { "name": "Optical Brighteners", "info": "Whitening dyes; persistent in environment, can irritate skin." }
+    ],
+    "alternatives": [
+      "Fragrance-free, dye-free detergent",
+      "Soap-nut (reetha) or plant-based detergent"
+    ]
+  },
+  {
+    "name": "Ariel Matic Liquid Detergent",
+    "category": "Household",
+    "chemicals": [
+      { "name": "Alcohol Ethoxylate (AE)", "info": "Non-ionic surfactant; effective on grease, may irritate skin." },
+      { "name": "Alkyl Ether Sulfates (AES)", "info": "Cleansers; can be irritating with prolonged contact." }
+    ],
+    "alternatives": [
+      "Hypoallergenic liquid detergent (no dyes/brighteners)",
+      "Eco-certified detergent sheets"
+    ]
+  },
+  {
+    "name": "Harpic Power Plus Toilet Cleaner",
+    "category": "Household",
+    "chemicals": [
+      { "name": "Hydrochloric Acid (~10.5% w/v)", "info": "Strong acid; corrosive to skin/eyes; fumes irritate airways." },
+      { "name": "Alkyl Trimethyl Ammonium Chloride", "info": "Quat disinfectant; irritant, careful handling required." }
+    ],
+    "alternatives": [
+      "Milder citric-acid toilet cleaner",
+      "Mechanical descaling + vinegar soak"
+    ]
+  },
+  {
+    "name": "Lizol Disinfectant Surface Cleaner",
+    "category": "Household",
+    "chemicals": [
+      { "name": "Benzalkonium Chloride", "info": "Quat biocide; eye/skin irritant; toxic to aquatic life." },
+      { "name": "Lauryl Alcohol Ethoxylate", "info": "Non-ionic surfactant; can irritate skin." }
+    ],
+    "alternatives": [
+      "Diluted soap-based floor cleaner",
+      "Hydrogen-peroxide surface cleaner"
+    ]
+  },
+  {
+    "name": "Vim Dishwash Gel",
+    "category": "Household",
+    "chemicals": [
+      { "name": "Sodium Linear Alkylbenzene Sulfonate (LAS)", "info": "Powerful grease cutter; can irritate/defat skin." },
+      { "name": "Sodium Laureth Sulfate (SLES)", "info": "Detergent; potential skin/eye irritation." }
+    ],
+    "alternatives": [
+      "Gentler dish gel with amphoteric surfactants",
+      "Solid dish bar (fragrance-free)"
+    ]
+  },
+  {
+    "name": "Coca-Cola",
+    "category": "Food & Beverages",
+    "chemicals": [
+      { "name": "Phosphoric Acid (INS 338)", "info": "Adds tartness; erosive to tooth enamel with frequent intake." },
+      { "name": "Caramel Color (Class IV, E150d)", "info": "Can contain 4-MEI as a by-product." }
+    ],
+    "alternatives": [
+      "Sparkling water + lemon",
+      "Cola sweetened with stevia"
+    ]
+  },
+  {
+    "name": "Pepsi",
+    "category": "Food & Beverages",
+    "chemicals": [
+      { "name": "Phosphoric Acid", "info": "Erosive to tooth enamel over time." },
+      { "name": "High Fructose Corn Syrup", "info": "Linked to obesity & metabolic issues with high intake." }
+    ],
+    "alternatives": [
+      "Sugar-free cola (moderate intake)",
+      "Infused sparkling water"
+    ]
+  },
+  {
+    "name": "Maggi 2-Minute Noodles Masala",
+    "category": "Food & Beverages",
+    "chemicals": [
+      { "name": "Monosodium Glutamate (MSG)", "info": "Flavor enhancer; safe for most, can cause sensitivity in some." },
+      { "name": "Tertiary Butylhydroquinone (TBHQ)", "info": "Antioxidant preservative; controversial in high doses." }
+    ],
+    "alternatives": [
+      "Whole-grain noodles + homemade spice mix",
+      "Low-sodium instant noodles"
+    ]
+  },
+  {
+    "name": "Lays Magic Masala Chips",
+    "category": "Food & Beverages",
+    "chemicals": [
+      { "name": "Monosodium Glutamate (MSG)", "info": "Flavor enhancer; safe but can cause headaches in sensitive people." },
+      { "name": "Palm Oil", "info": "High in saturated fat; environmental sustainability concerns." }
+    ],
+    "alternatives": [
+      "Baked potato chips",
+      "Air-popped veggie crisps"
+    ]
+  },
+  {
+    "name": "Red Bull Energy Drink",
+    "category": "Food & Beverages",
+    "chemicals": [
+      { "name": "Caffeine", "info": "Stimulant; excess can cause jitters, insomnia, heart strain." },
+      { "name": "Taurine", "info": "Amino acid; generally safe but linked to overstimulation with high caffeine." }
+    ],
+    "alternatives": [
+      "Natural cold brew coffee",
+      "Sparkling yerba mate"
+    ]
+  },
+  {
+    "name": "Tropicana 100% Orange Juice",
+    "category": "Food & Beverages",
+    "chemicals": [
+      { "name": "Ascorbic Acid (Vitamin C)", "info": "Added nutrient; safe, beneficial antioxidant." },
+      { "name": "Natural Sugars (Fructose)", "info": "Can spike blood sugar; overconsumption may contribute to weight gain." }
+    ],
+    "alternatives": [
+      "Fresh-squeezed orange juice",
+      "Diluted juice blend"
+    ]
+  },
+  {
+    "name": "Johnson’s Baby Shampoo",
+    "category": "Baby Care",
+    "chemicals": [
+      { "name": "Sodium Laureth Sulfate (SLES)", "info": "Detergent; mild but can irritate very sensitive skin." },
+      { "name": "Fragrance", "info": "May contain allergens; can cause sensitivity in some babies." }
+    ],
+    "alternatives": [
+      "Fragrance-free baby shampoo",
+      "Oat-based baby cleanser"
+    ]
+  },
+  {
+    "name": "Pampers Active Baby Diapers",
+    "category": "Baby Care",
+    "chemicals": [
+      { "name": "Superabsorbent Polymer (Sodium Polyacrylate)", "info": "Locks in moisture; safe in diaper core but harmful if ingested." },
+      { "name": "Petrolatum", "info": "Moisture barrier; can clog pores for some babies." }
+    ],
+    "alternatives": [
+      "Cloth diapers with natural inserts",
+      "Eco-friendly disposable diapers"
+    ]
+  },
+  {
+    "name": "Pedigree Adult Dog Food",
+    "category": "Pet Care",
+    "chemicals": [
+      { "name": "BHA (Butylated Hydroxyanisole)", "info": "Antioxidant preservative; possibly carcinogenic in high doses in lab animals." },
+      { "name": "Meat and Bone Meal", "info": "Low-quality protein source; nutritional value can vary." }
+    ],
+    "alternatives": [
+      "High-protein grain-free kibble",
+      "Fresh cooked meat + balanced supplements"
+    ]
+  }
+]
