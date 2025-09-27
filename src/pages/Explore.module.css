@@ -1,93 +1,162 @@
 .container {
-  padding: 60px 30px;
+  padding: 80px 40px; /* Increased padding */
   font-family: 'Inter', 'Segoe UI', sans-serif;
-  background-color: #f8fafc;
+  background-color: #121212; 
   min-height: 100vh;
   text-align: center;
 }
 
 .title {
-  font-size: 2.8rem;
-  color: #0f172a;
-  margin-bottom: 10px;
+  font-size: 3rem; /* Increased size */
+  color: #14b8a6;
+  margin-bottom: 15px;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  color: #475569;
-  margin-bottom: 40px;
+  font-size: 1.35rem; /* Increased size */
+  color: #a0a0a0;
+  margin-bottom: 60px; /* Increased margin */
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Slightly wider min width */
+  gap: 30px; /* Increased gap */
+  max-width: 1200px; /* Wider max container */
   margin: 0 auto;
 }
 
 .card {
-  background-color: #ffffff;
-  padding: 25px;
+  background-color: #28283d;
+  padding: 30px; /* Increased padding */
   border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   cursor: pointer;
   text-align: left;
+  color: #e0e0e0;
+  border-top: 4px solid #4c51bf; 
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+  border-color: #14b8a6;
 }
 
 .card h3 {
-  margin-bottom: 6px;
-  color: #1e293b;
-  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #14b8a6; 
+  font-size: 1.6rem; /* Increased size */
 }
 
 .card p {
   margin: 0;
-  color: #64748b;
-  font-size: 0.95rem;
+  color: #a0a0a0;
+  font-size: 1.1rem; /* Increased size */
 }
 
+/* --- Popup / Expanded View Styles --- */
 .popup {
-  background-color: #ffffff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  border-radius: 16px;
-  margin-top: 40px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #28283d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  padding: 40px; /* Increased padding */
+  border-radius: 18px;
+  margin: 50px auto; /* Increased margin */
+  max-width: 900px; /* Wider popup */
   text-align: left;
+  color: #e0e0e0;
+  border: 1px solid #4c51bf;
 }
 
 .popup h2 {
-  color: #0f172a;
-  margin-bottom: 10px;
+  color: #4c51bf; 
+  margin-bottom: 15px;
+  font-size: 2.2rem; /* Increased size */
 }
 
-.popup p {
-  color: #475569;
-  margin-bottom: 10px;
-  line-height: 1.5;
+.popupDescription {
+    color: #e0e0e0;
+    font-style: italic;
+    margin-bottom: 30px !important;
+    border-bottom: 1px solid #3a3a50;
+    padding-bottom: 20px;
+    font-size: 1.1rem; /* Increased size */
+}
+
+.chemicalList {
+    margin-top: 20px;
+}
+
+.chemicalList h3 {
+    color: #14b8a6; 
+    font-size: 1.7rem; /* Increased size */
+    margin-bottom: 20px;
+}
+
+.chemicalItem {
+    background-color: #1e1e2c; 
+    padding: 20px; /* Increased padding */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Increased margin */
+    border-left: 5px solid #14b8a6;
+    transition: transform 0.2s;
+}
+
+.chemicalItem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.chemicalItem h4 {
+    color: #e0e0e0;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.2rem; /* Increased size */
+}
+
+.chemicalItem p {
+    color: #a0a0a0;
+    margin-top: 0;
+    font-size: 1rem;
 }
 
 .closeButton {
-  margin-top: 15px;
-  background-color: #2563eb;
-  color: white;
-  padding: 10px 18px;
+  margin-top: 30px; /* Increased margin */
+  background-color: #4c51bf; 
+  color: #1e1e2c;
+  padding: 14px 28px; /* Slightly larger button */
   border: none;
   border-radius: 8px;
-  font-size: 0.95rem;
+  font-size: 1.1rem; /* Increased size */
+  font-weight: 600;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 .closeButton:hover {
-  background-color: #1d4ed8;
+  background-color: #14b8a6;
+  color: #1e1e2c;
+}
+
+.errorText {
+    color: #ef4444; 
+    font-size: 1.3rem; /* Increased size */
+    margin-top: 40px;
+}
+
+/* Responsive adjustments for mobile/smaller screens */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.2rem;
+    }
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    .card h3 {
+        font-size: 1.3rem;
+    }
+    .popup h2 {
+        font-size: 1.8rem;
+    }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Survey.module.css';
-import ReturnHomeButton from "../components/ReturnHomeButton";
-import TopWave from "../components/TopWave";
+//import ReturnHomeButton from "../components/ReturnHomeButton";
+// import TopWave from "../components/TopWave"; // Removed TopWave
 
 const surveyQuestions = [
   {
@@ -88,8 +88,8 @@ function Survey() {
    const percentage = Math.round((totalScore / maxScore) * 100);
 
   return (
-    <div style={{ position: "relative", minHeight: "100vh" }}>
-      <TopWave />
+    <div className={styles.wrapper}>
+      {/* TopWave removed */}
       <div className={styles.container}>
       <h1 className={styles.title}>🧪 Chemical Awareness Survey</h1>
 
@@ -130,9 +130,15 @@ function Survey() {
 >
   Increase Your Chemical Knowledge
 </button>        
+<button
+  onClick={() => window.location.href = "/quiz"}
+  className={styles.quizBtn}
+>
+  Test Your Knowledge (Quiz)
+</button>   
         </div>
       )}
-      <ReturnHomeButton />
+      {/* <ReturnHomeButton /> */}
     </div>
     </div>
   );

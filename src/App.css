@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+/* This targets the entire viewport */
+body {
+  background-color: black;
+  /* Ensure no default margin or padding pushes the background away */
+  margin: 0; 
+  padding: 0;
+}
+
+/* * This targets the main div where React is mounted (usually in index.html)
+* You might need this if the body background is still showing white borders.
+*/
+#root {
+  background-color: black;
+  /* Make sure it takes up the full height */
+  min-height: 100vh;
+}

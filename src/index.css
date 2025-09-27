@@ -1,5 +1,9 @@
 body {
   margin: 0;
+  /* --- DARK MODE FIX: Set global background to dark base color --- */
+  background-color: #121212;
+  color: #e0e0e0; /* Set default text color */
+  /* --- End DARK MODE FIX --- */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

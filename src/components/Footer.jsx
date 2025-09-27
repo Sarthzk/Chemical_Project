@@ -5,9 +5,8 @@ const Footer = () => (
     width: "100%",
     textAlign: "left",
     padding: "18px 10px",
-    
     fontSize: "1rem",
-    color: "#170da1",
+    color: "#ffffffff", // Muted Teal Accent for copyright text
     position: "fixed",
     left: 0,
     bottom: 0,

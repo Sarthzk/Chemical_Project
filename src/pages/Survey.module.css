@@ -1,3 +1,9 @@
+.wrapper {
+  position: relative; 
+  min-height: 100vh;
+  background-color: #121212;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -9,15 +15,16 @@
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: 30px;
-  color: #0f172a;
+  color: #14b8a6; /* Muted Teal Title */
 }
 
 .questionCard {
-  background: #ffffff;
+  background: #28283d;
   border-radius: 12px;
   padding: 25px;
   margin-bottom: 30px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  color: #e0e0e0;
 }
 
 .options {
@@ -27,59 +34,84 @@
   margin-top: 15px;
 }
 
-.optionButton {
-  background-color: #2317d5;
-  border: 2px solid #00ff;
-  color: #007bff;
+.optionBtn {
+  background-color: #1e1e2c; 
+  border: 1px solid #3a3a50;
+  color: #e0e0e0;
   padding: 10px 16px;
-  margin: 8px 6px;
-  border-radius: 12px;
+  margin: 0;
+  border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
-.optionButton:hover {
-  background-color: #007bff;
-  color: #fff;
-  transform: scale(1.05);
+.optionBtn:hover {
+  background-color: #3a3a50;
+  color: #14b8a6; /* Muted Teal Hover */
+  transform: scale(1.02);
 }
 
 .selected {
-  background-color: #13a535;
-  color: white;
+  background-color: #4c51bf !important; /* Muted Indigo Selected */
+  color: #1e1e2c;
+  border-color: #4c51bf;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
 }
 
 .submitBtn {
-  margin-top: 20px;
-  background-color: #13a535;
-  color: white;
-  padding: 12px 24px;
+  margin-top: 30px;
+  background-color: #4c51bf; 
+  color: #1e1e2c;
+  padding: 14px 28px;
   border: none;
   border-radius: 10px;
   font-size: 1.1rem;
+  font-weight: 700;
   cursor: pointer;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  transition: background-color 0.2s;
+}
+
+.submitBtn:hover {
+    background-color: #14b8a6;
+    color: #1e1e2c;
 }
 
 .resultCard {
   text-align: center;
-  background: #ecfdf5;
+  background: #28283d; 
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
 }
 
 .learnMoreBtn {
   margin-top: 20px;
-  background-color: #2563eb;
-  color: white;
+  background-color: #22c55e; 
+  color: #1e1e2c;
   padding: 12px 24px;
   border: none;
   border-radius: 10px;
   font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quizBtn {
+    margin-top: 15px;
+    background-color: #14b8a6; /* Muted Teal Quiz Button */
+    color: #1e1e2c;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-left: 15px; 
+}
+
+.quizBtn:hover {
+    background-color: #4c51bf;
+    color: #1e1e2c;
 }

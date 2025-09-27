@@ -2,23 +2,28 @@
   padding: 50px;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f1f5f9;
+  background-color: #121212; 
   min-height: 100vh;
 }
 
 .title {
   font-size: 2.2rem;
-  color: #1e293b;
+  color: #14b8a6; /* Muted Teal Title */
   margin-bottom: 30px;
 }
 
 .quizBox {
-  background-color: #ffffff;
+  background-color: #28283d;
   border-radius: 12px;
   padding: 30px;
   max-width: 600px;
   margin: 0 auto;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  color: #e0e0e0;
+}
+
+.quizBox h3 {
+  color: #e0e0e0;
 }
 
 .options {
@@ -33,39 +38,41 @@
   font-size: 1rem;
   border: none;
   border-radius: 8px;
-  background-color: #e2e8f0;
+  background-color: #1e1e2c; 
+  color: #e0e0e0;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 .optionBtn:hover {
-  background-color: #cbd5e1;
+  background-color: #3a3a50;
 }
 
 .correct {
-  background-color: #22c55e !important;
-  color: white;
+  background-color: #22c55e !important; 
+  color: #1e1e2c;
 }
 
 .wrong {
-  background-color: #ef4444 !important;
+  background-color: #ef4444 !important; 
   color: white;
 }
 
 .result {
-  background-color: #fef9c3;
+  background-color: #28283d;
   padding: 40px;
   border-radius: 12px;
   max-width: 600px;
   margin: 0 auto;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  color: #e0e0e0;
 }
 
 .resetBtn {
   margin-top: 20px;
   padding: 12px 20px;
-  background-color: #2563eb;
-  color: white;
+  background-color: #4c51bf; /* Muted Indigo Button */
+  color: #1e1e2c;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
@@ -76,13 +83,13 @@
 }
 
 .correctText {
-  color: #16a34a;
+  color: #22c55e;
   font-weight: 600;
   font-size: 1.1rem;
 }
 
 .wrongText {
-  color: #dc2626;
+  color: #ef4444;
   font-weight: 600;
   font-size: 1.1rem;
 }

@@ -156,6 +156,19 @@
     ]
   },
   {
+    "name": "Diet Coke",
+    "category": "Food & Beverages",
+    "chemicals": [
+      { "name": "Aspartame", "info": "Artificial sweetener; highly scrutinized, potentially harmful to those with PKU." },
+      { "name": "Phosphoric Acid", "info": "Erosive to tooth enamel over time." },
+      { "name": "Caramel Color (Class IV, E150d)", "info": "Can contain 4-MEI as a by-product." }
+    ],
+    "alternatives": [
+      "Sparkling water + natural flavors",
+      "Unsweetened iced tea"
+    ]
+  },
+  {
     "name": "Maggi 2-Minute Noodles Masala",
     "category": "Food & Beverages",
     "chemicals": [
@@ -237,6 +250,126 @@
     "alternatives": [
       "High-protein grain-free kibble",
       "Fresh cooked meat + balanced supplements"
+    ]
+  },
+  {
+    "name": "Oral-B Complete Toothbrush",
+    "category": "Personal Care",
+    "chemicals": [
+      { "name": "BPA (Bisphenol A)", "info": "Found in some plastics; potential endocrine disruptor." },
+      { "name": "Fragrance", "info": "Used in scented handles/packaging; potential allergen." }
+    ],
+    "alternatives": [
+      "Bamboo toothbrush",
+      "Toothbrush with bio-based plastic handle"
+    ]
+  },
+  {
+    "name": "Vaseline Intensive Care Lotion",
+    "category": "Personal Care",
+    "chemicals": [
+      { "name": "Petroleum", "info": "Occlusive moisturizing agent derived from crude oil; can clog pores." },
+      { "name": "Parabens", "info": "Preservatives (e.g., Propylparaben); potential endocrine disruptor." }
+    ],
+    "alternatives": [
+      "Shea Butter/Cocoa Butter lotion",
+      "Mineral-oil free lotion (e.g., Cerave)"
+    ]
+  },
+  {
+    "name": "Febreze Air Freshener",
+    "category": "Household",
+    "chemicals": [
+      { "name": "Phthalates", "info": "Often used to make scent linger; endocrine disruptor." },
+      { "name": "Formaldehyde", "info": "A respiratory irritant and known carcinogen." }
+    ],
+    "alternatives": [
+      "Essential oil diffuser",
+      "Baking soda absorber with citrus peels"
+    ]
+  },
+  {
+    "name": "Clorox Disinfecting Wipes",
+    "category": "Household",
+    "chemicals": [
+      { "name": "Quaternary Ammonium Compounds (Quats)", "info": "Powerful disinfectant; linked to asthma and dermatitis." },
+      { "name": "Fragrance", "info": "Can cause respiratory irritation in confined spaces." }
+    ],
+    "alternatives": [
+      "White vinegar solution + steam mop",
+      "Hydrogen peroxide-based cleaner"
+    ]
+  },
+  {
+    "name": "Gillette Shaving Foam",
+    "category": "Personal Care",
+    "chemicals": [
+      { "name": "Triethanolamine (TEA)", "info": "pH balancer and foaming agent; can form nitrosamines (carcinogens) when mixed with nitrates." },
+      { "name": "BHT (Butylated Hydroxytoluene)", "info": "Antioxidant preservative; potential endocrine disruptor." }
+    ],
+    "alternatives": [
+      "Shaving soap/cream bar",
+      "Natural oil (e.g., coconut) shaving alternative"
+    ]
+  },
+  {
+    "name": "Amul Butter",
+    "category": "Food & Beverages",
+    "chemicals": [
+      { "name": "Annatto/Coloring agents", "info": "A natural coloring agent (E160b); can cause allergic reactions in sensitive individuals." },
+      { "name": "Salt/Sodium Chloride", "info": "Added for preservation and flavor; excess intake is linked to high blood pressure." }
+    ],
+    "alternatives": [
+      "Homemade white butter",
+      "Unsalted butter (to control sodium intake)"
+    ]
+  },
+  {
+    "name": "Fevicol MR Adhesive",
+    "category": "Household",
+    "chemicals": [
+      { "name": "Formaldehyde", "info": "Trace amount carcinogen; irritating to eyes, nose, and throat." },
+      { "name": "Volatile Organic Compounds (VOCs)", "info": "Solvents released during curing; contributes to poor indoor air quality." }
+    ],
+    "alternatives": [
+      "Non-toxic PVA glue (certified safe)",
+      "Starch-based adhesive"
+    ]
+  },
+  {
+    "name": "Tide Pods Detergent",
+    "category": "Household",
+    "chemicals": [
+      { "name": "High-concentration Surfactants", "info": "Highly concentrated cleaners; toxic if ingested and harsh on sensitive skin." },
+      { "name": "Dyes", "info": "Added for aesthetic purposes; potential skin sensitizers." }
+    ],
+    "alternatives": [
+      "Concentrated non-bio liquid (less harsh)",
+      "Laundry detergent strips"
+    ]
+  },
+  {
+    "name": "Dettol Hand Wash",
+    "category": "Personal Care",
+    "chemicals": [
+      { "name": "Triclosan", "info": "Antibacterial agent; linked to endocrine disruption and resistance." },
+      { "name": "SLS (Sodium Lauryl Sulfate)", "info": "Common detergent; can cause dryness and skin irritation." }
+    ],
+    "alternatives": [
+      "Simple soap bar (Triclosan-free)",
+      "Natural moisturizing hand wash"
+    ]
+  },
+  {
+    "name": "Heinz Tomato Ketchup",
+    "category": "Food & Beverages",
+    "chemicals": [
+      { "name": "High Fructose Corn Syrup (HFCS)", "info": "Primary sweetener; associated with metabolic issues in excess." },
+      { "name": "Added Sugars", "info": "High concentration of sugar; contributes to obesity and poor dental health." }
+    ],
+    "alternatives": [
+      "Homemade tomato puree",
+      "Low-sugar organic ketchup"
     ]
   }
 ]
