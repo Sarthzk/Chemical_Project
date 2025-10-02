@@ -3,8 +3,8 @@
     "name": "Colgate Total Advanced Health Toothpaste",
     "category": "Personal Care",
     "chemicals": [
-      { "name": "Sodium Lauryl Sulfate (SLS)", "info": "Foaming detergent; can irritate oral mucosa in some people." },
-      { "name": "Sodium Fluoride", "info": "Anti-cavity agent; toxic if swallowed in large amounts." }
+      { "name": "Sodium Lauryl Sulfate (SLS)", "info": "Foaming detergent; can irritate oral mucosa in some people.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Sodium_dodecyl_sulfate.svg/1200px-Sodium_dodecyl_sulfate.svg.png" },
+      { "name": "Sodium Fluoride", "info": "Anti-cavity agent; toxic if swallowed in large amounts.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Sodium_fluoride_3D_ionic.png/1200px-Sodium_fluoride_3D_ionic.png" }
     ],
     "alternatives": [
       "Sensodyne SLS-Free Toothpaste",
@@ -15,8 +15,8 @@
     "name": "Sensodyne Rapid Relief Toothpaste",
     "category": "Personal Care",
     "chemicals": [
-      { "name": "Stannous Fluoride", "info": "Active for sensitivity relief; may stain if not stabilized." },
-      { "name": "Sodium Tripolyphosphate", "info": "Helps lift/prevent surface stains." }
+      { "name": "Stannous Fluoride", "info": "Active for sensitivity relief; may stain if not stabilized.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Stannous-fluoride-3D-ionic.png/1200px-Stannous-fluoride-3D-ionic.png" },
+      { "name": "Sodium Tripolyphosphate", "info": "Helps lift/prevent surface stains.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Sodium_tripolyphosphate.svg/1200px-Sodium_tripolyphosphate.svg.png" }
     ],
     "alternatives": [
       "SLS-free fluoride toothpaste (gentle)",
@@ -27,8 +27,8 @@
     "name": "Dove Cream Beauty Bathing Bar",
     "category": "Personal Care",
     "chemicals": [
-      { "name": "Sodium Cocoyl Isethionate", "info": "Primary cleanser; milder but can irritate very sensitive skin." },
-      { "name": "Cocamidopropyl Betaine", "info": "Cleansing/foam booster; known allergen for a small subset." }
+      { "name": "Sodium Cocoyl Isethionate", "info": "Primary cleanser; milder but can irritate very sensitive skin.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Sodium_cocoyl_isethionate.svg/1200px-Sodium_cocoyl_isethionate.svg.png" },
+      { "name": "Cocamidopropyl Betaine", "info": "Cleansing/foam booster; known allergen for a small subset.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Cocamidopropyl_betaine.svg/1200px-Cocamidopropyl_betaine.svg.png" }
     ],
     "alternatives": [
       "Fragrance-free syndet bar (sensitive skin)",
@@ -39,8 +39,8 @@
     "name": "Head & Shoulders Anti-Dandruff Shampoo",
     "category": "Personal Care",
     "chemicals": [
-      { "name": "Zinc Pyrithione (ZPT)", "info": "Anti-dandruff active; tackles Malassezia yeast." },
-      { "name": "Sodium Laureth Sulfate (SLES)", "info": "Detergent; can be drying/irritating in some users." }
+      { "name": "Zinc Pyrithione (ZPT)", "info": "Anti-dandruff active; tackles Malassezia yeast.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Pyrithione-zinc-3D-balls.png/1200px-Pyrithione-zinc-3D-balls.png" },
+      { "name": "Sodium Laureth Sulfate (SLES)", "info": "Detergent; can be drying/irritating in some users.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sodium_laureth_sulfate.svg/1200px-Sodium_laureth_sulfate.svg.png" }
     ],
     "alternatives": [
       "Ketoconazole 1% anti-dandruff shampoo",
@@ -51,8 +51,8 @@
     "name": "Pantene Pro-V Hair Fall Control Shampoo",
     "category": "Personal Care",
     "chemicals": [
-      { "name": "Sodium Laureth Sulfate (SLES)", "info": "Primary cleanser; may strip oils in some hair types." },
-      { "name": "Dimethicone", "info": "Silicone for slip; can build up without clarifying." }
+      { "name": "Sodium Laureth Sulfate (SLES)", "info": "Primary cleanser; may strip oils in some hair types.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sodium_laureth_sulfate.svg/1200px-Sodium_laureth_sulfate.svg.png" },
+      { "name": "Dimethicone", "info": "Silicone for slip; can build up without clarifying.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Dimethicone-repeat-unit-and-end-caps.svg/1200px-Dimethicone-repeat-unit-and-end-caps.svg.png" }
     ],
     "alternatives": [
       "Sulfate-free strengthening shampoo",
@@ -63,8 +63,8 @@
     "name": "Nivea Soft Light Moisturizer",
     "category": "Personal Care",
     "chemicals": [
-      { "name": "Paraffinum Liquidum (Mineral Oil)", "info": "Occlusive; can feel heavy or comedogenic for some." },
-      { "name": "Alcohol Denat.", "info": "Can be drying/irritating for sensitive skin." }
+      { "name": "Paraffinum Liquidum (Mineral Oil)", "info": "Occlusive; can feel heavy or comedogenic for some.", "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Paraffin_oil_1l.jpg" },
+      { "name": "Alcohol Denat.", "info": "Can be drying/irritating for sensitive skin.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ethanol-2D-flat.svg/1200px-Ethanol-2D-flat.svg.png" }
     ],
     "alternatives": [
       "Light gel-cream with glycerin + hyaluronic acid",
@@ -75,8 +75,8 @@
     "name": "Surf Excel Matic Front Load Detergent Powder",
     "category": "Household",
     "chemicals": [
-      { "name": "Sodium Alkylbenzene Sulfonate (LAS)", "info": "Anionic surfactant; harsh to skin & aquatic life." },
-      { "name": "Optical Brighteners", "info": "Whitening dyes; persistent in environment, can irritate skin." }
+      { "name": "Sodium Alkylbenzene Sulfonate (LAS)", "info": "Anionic surfactant; harsh to skin & aquatic life.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sodium_dodecylbenzenesulfonate.svg/1920px-Sodium_dodecylbenzenesulfonate.svg.png" },
+      { "name": "Optical Brighteners", "info": "Whitening dyes; persistent in environment, can irritate skin.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Stilbene3.svg/1200px-Stilbene3.svg.png" }
     ],
     "alternatives": [
       "Fragrance-free, dye-free detergent",
@@ -87,8 +87,8 @@
     "name": "Ariel Matic Liquid Detergent",
     "category": "Household",
     "chemicals": [
-      { "name": "Alcohol Ethoxylate (AE)", "info": "Non-ionic surfactant; effective on grease, may irritate skin." },
-      { "name": "Alkyl Ether Sulfates (AES)", "info": "Cleansers; can be irritating with prolonged contact." }
+      { "name": "Alcohol Ethoxylate (AE)", "info": "Non-ionic surfactant; effective on grease, may irritate skin.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Alcohol_ethoxylate_general_formula.svg/1200px-Alcohol_ethoxylate_general_formula.svg.png" },
+      { "name": "Alkyl Ether Sulfates (AES)", "info": "Cleansers; can be irritating with prolonged contact.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sodium_laureth_sulfate.svg/1200px-Sodium_laureth_sulfate.svg.png" }
     ],
     "alternatives": [
       "Hypoallergenic liquid detergent (no dyes/brighteners)",
@@ -99,8 +99,8 @@
     "name": "Harpic Power Plus Toilet Cleaner",
     "category": "Household",
     "chemicals": [
-      { "name": "Hydrochloric Acid (~10.5% w/v)", "info": "Strong acid; corrosive to skin/eyes; fumes irritate airways." },
-      { "name": "Alkyl Trimethyl Ammonium Chloride", "info": "Quat disinfectant; irritant, careful handling required." }
+      { "name": "Hydrochloric Acid (~10.5% w/v)", "info": "Strong acid; corrosive to skin/eyes; fumes irritate airways.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Hydrochloric_acid_3D_ball-and-stick.png/1200px-Hydrochloric_acid_3D_ball-and-stick.png" },
+      { "name": "Alkyl Trimethyl Ammonium Chloride", "info": "Quat disinfectant; irritant, careful handling required.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Cetrimonium_bromide_structure.svg/1200px-Cetrimonium_bromide_structure.svg.png" }
     ],
     "alternatives": [
       "Milder citric-acid toilet cleaner",
@@ -111,8 +111,8 @@
     "name": "Lizol Disinfectant Surface Cleaner",
     "category": "Household",
     "chemicals": [
-      { "name": "Benzalkonium Chloride", "info": "Quat biocide; eye/skin irritant; toxic to aquatic life." },
-      { "name": "Lauryl Alcohol Ethoxylate", "info": "Non-ionic surfactant; can irritate skin." }
+      { "name": "Benzalkonium Chloride", "info": "Quat biocide; eye/skin irritant; toxic to aquatic life.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Benzalkonium_chloride.svg/1200px-Benzalkonium_chloride.svg.png" },
+      { "name": "Lauryl Alcohol Ethoxylate", "info": "Non-ionic surfactant; can irritate skin.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Alcohol_ethoxylate_general_formula.svg/1200px-Alcohol_ethoxylate_general_formula.svg.png" }
     ],
     "alternatives": [
       "Diluted soap-based floor cleaner",
@@ -123,8 +123,8 @@
     "name": "Vim Dishwash Gel",
     "category": "Household",
     "chemicals": [
-      { "name": "Sodium Linear Alkylbenzene Sulfonate (LAS)", "info": "Powerful grease cutter; can irritate/defat skin." },
-      { "name": "Sodium Laureth Sulfate (SLES)", "info": "Detergent; potential skin/eye irritation." }
+      { "name": "Sodium Linear Alkylbenzene Sulfonate (LAS)", "info": "Powerful grease cutter; can irritate/defat skin.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sodium_dodecylbenzenesulfonate.svg/1920px-Sodium_dodecylbenzenesulfonate.svg.png" },
+      { "name": "Sodium Laureth Sulfate (SLES)", "info": "Detergent; potential skin/eye irritation.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sodium_laureth_sulfate.svg/1200px-Sodium_laureth_sulfate.svg.png" }
     ],
     "alternatives": [
       "Gentler dish gel with amphoteric surfactants",
@@ -135,8 +135,8 @@
     "name": "Coca-Cola",
     "category": "Food & Beverages",
     "chemicals": [
-      { "name": "Phosphoric Acid (INS 338)", "info": "Adds tartness; erosive to tooth enamel with frequent intake." },
-      { "name": "Caramel Color (Class IV, E150d)", "info": "Can contain 4-MEI as a by-product." }
+      { "name": "Phosphoric Acid (INS 338)", "info": "Adds tartness; erosive to tooth enamel with frequent intake.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Phosphoric_acid.svg/1200px-Phosphoric_acid.svg.png" },
+      { "name": "Caramel Color (Class IV, E150d)", "info": "Can contain 4-MEI as a by-product.", "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Caramel_color_and_caramel_color_solution.jpg" }
     ],
     "alternatives": [
       "Sparkling water + lemon",
@@ -147,8 +147,8 @@
     "name": "Pepsi",
     "category": "Food & Beverages",
     "chemicals": [
-      { "name": "Phosphoric Acid", "info": "Erosive to tooth enamel over time." },
-      { "name": "High Fructose Corn Syrup", "info": "Linked to obesity & metabolic issues with high intake." }
+      { "name": "Phosphoric Acid", "info": "Erosive to tooth enamel over time.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Phosphoric_acid.svg/1200px-Phosphoric_acid.svg.png" },
+      { "name": "High Fructose Corn Syrup", "info": "Linked to obesity & metabolic issues with high intake.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/High-fructose-corn-syrup.jpg/1280px-High-fructose-corn-syrup.jpg" }
     ],
     "alternatives": [
       "Sugar-free cola (moderate intake)",
@@ -159,9 +159,9 @@
     "name": "Diet Coke",
     "category": "Food & Beverages",
     "chemicals": [
-      { "name": "Aspartame", "info": "Artificial sweetener; highly scrutinized, potentially harmful to those with PKU." },
-      { "name": "Phosphoric Acid", "info": "Erosive to tooth enamel over time." },
-      { "name": "Caramel Color (Class IV, E150d)", "info": "Can contain 4-MEI as a by-product." }
+      { "name": "Aspartame", "info": "Artificial sweetener; highly scrutinized, potentially harmful to those with PKU.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Aspartame_-_Aspartam.svg/1200px-Aspartame_-_Aspartam.svg.png" },
+      { "name": "Phosphoric Acid", "info": "Erosive to tooth enamel over time.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Phosphoric_acid.svg/1200px-Phosphoric_acid.svg.png" },
+      { "name": "Caramel Color (Class IV, E150d)", "info": "Can contain 4-MEI as a by-product.", "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Caramel_color_and_caramel_color_solution.jpg" }
     ],
     "alternatives": [
       "Sparkling water + natural flavors",
@@ -172,8 +172,8 @@
     "name": "Maggi 2-Minute Noodles Masala",
     "category": "Food & Beverages",
     "chemicals": [
-      { "name": "Monosodium Glutamate (MSG)", "info": "Flavor enhancer; safe for most, can cause sensitivity in some." },
-      { "name": "Tertiary Butylhydroquinone (TBHQ)", "info": "Antioxidant preservative; controversial in high doses." }
+      { "name": "Monosodium Glutamate (MSG)", "info": "Flavor enhancer; safe for most, can cause sensitivity in some.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Monosodium_glutamate.svg/1200px-Monosodium_glutamate.svg.png" },
+      { "name": "Tertiary Butylhydroquinone (TBHQ)", "info": "Antioxidant preservative; controversial in high doses.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/TBHQ.svg/1200px-TBHQ.svg.png" }
     ],
     "alternatives": [
       "Whole-grain noodles + homemade spice mix",
@@ -184,8 +184,8 @@
     "name": "Lays Magic Masala Chips",
     "category": "Food & Beverages",
     "chemicals": [
-      { "name": "Monosodium Glutamate (MSG)", "info": "Flavor enhancer; safe but can cause headaches in sensitive people." },
-      { "name": "Palm Oil", "info": "High in saturated fat; environmental sustainability concerns." }
+      { "name": "Monosodium Glutamate (MSG)", "info": "Flavor enhancer; safe but can cause headaches in sensitive people.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Monosodium_glutamate.svg/1200px-Monosodium_glutamate.svg.png" },
+      { "name": "Palm Oil", "info": "High in saturated fat; environmental sustainability concerns.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Palm_oil.jpg/1280px-Palm_oil.jpg" }
     ],
     "alternatives": [
       "Baked potato chips",
@@ -196,8 +196,8 @@
     "name": "Red Bull Energy Drink",
     "category": "Food & Beverages",
     "chemicals": [
-      { "name": "Caffeine", "info": "Stimulant; excess can cause jitters, insomnia, heart strain." },
-      { "name": "Taurine", "info": "Amino acid; generally safe but linked to overstimulation with high caffeine." }
+      { "name": "Caffeine", "info": "Stimulant; excess can cause jitters, insomnia, heart strain.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Caffeine-2D-skeletal.svg/1200px-Caffeine-2D-skeletal.svg.png" },
+      { "name": "Taurine", "info": "Amino acid; generally safe but linked to overstimulation with high caffeine.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Taurine-2D-skeletal.svg/1200px-Taurine-2D-skeletal.svg.png" }
     ],
     "alternatives": [
       "Natural cold brew coffee",
@@ -208,8 +208,8 @@
     "name": "Tropicana 100% Orange Juice",
     "category": "Food & Beverages",
     "chemicals": [
-      { "name": "Ascorbic Acid (Vitamin C)", "info": "Added nutrient; safe, beneficial antioxidant." },
-      { "name": "Natural Sugars (Fructose)", "info": "Can spike blood sugar; overconsumption may contribute to weight gain." }
+      { "name": "Ascorbic Acid (Vitamin C)", "info": "Added nutrient; safe, beneficial antioxidant.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ascorbic_acid.svg/1200px-Ascorbic_acid.svg.png" },
+      { "name": "Natural Sugars (Fructose)", "info": "Can spike blood sugar; overconsumption may contribute to weight gain.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fructose-isomers.svg/1200px-Fructose-isomers.svg.png" }
     ],
     "alternatives": [
       "Fresh-squeezed orange juice",
@@ -220,8 +220,8 @@
     "name": "Johnson’s Baby Shampoo",
     "category": "Baby Care",
     "chemicals": [
-      { "name": "Sodium Laureth Sulfate (SLES)", "info": "Detergent; mild but can irritate very sensitive skin." },
-      { "name": "Fragrance", "info": "May contain allergens; can cause sensitivity in some babies." }
+      { "name": "Sodium Laureth Sulfate (SLES)", "info": "Detergent; mild but can irritate very sensitive skin.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sodium_laureth_sulfate.svg/1200px-Sodium_laureth_sulfate.svg.png" },
+      { "name": "Fragrance", "info": "May contain allergens; can cause sensitivity in some babies.", "image": "https://images.pexels.com/photos/1007023/pexels-photo-1007023.jpeg" }
     ],
     "alternatives": [
       "Fragrance-free baby shampoo",
@@ -232,8 +232,8 @@
     "name": "Pampers Active Baby Diapers",
     "category": "Baby Care",
     "chemicals": [
-      { "name": "Superabsorbent Polymer (Sodium Polyacrylate)", "info": "Locks in moisture; safe in diaper core but harmful if ingested." },
-      { "name": "Petrolatum", "info": "Moisture barrier; can clog pores for some babies." }
+      { "name": "Superabsorbent Polymer (Sodium Polyacrylate)", "info": "Locks in moisture; safe in diaper core but harmful if ingested.", "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Sodium_polyacrylate.jpg" },
+      { "name": "Petrolatum", "info": "Moisture barrier; can clog pores for some babies.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Vaseline-jar.jpg/1280px-Vaseline-jar.jpg" }
     ],
     "alternatives": [
       "Cloth diapers with natural inserts",
@@ -244,8 +244,8 @@
     "name": "Pedigree Adult Dog Food",
     "category": "Pet Care",
     "chemicals": [
-      { "name": "BHA (Butylated Hydroxyanisole)", "info": "Antioxidant preservative; possibly carcinogenic in high doses in lab animals." },
-      { "name": "Meat and Bone Meal", "info": "Low-quality protein source; nutritional value can vary." }
+      { "name": "BHA (Butylated Hydroxyanisole)", "info": "Antioxidant preservative; possibly carcinogenic in high doses in lab animals.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Butylated_hydroxyanisole.svg/1200px-Butylated_hydroxyanisole.svg.png" },
+      { "name": "Meat and Bone Meal", "info": "Low-quality protein source; nutritional value can vary.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Meat_and_Bone_Meal_from_the_NC_State_Feed_Mill.jpg/1920px-Meat_and_Bone_Meal_from_the_NC_State_Feed_Mill.jpg" }
     ],
     "alternatives": [
       "High-protein grain-free kibble",
@@ -256,8 +256,8 @@
     "name": "Oral-B Complete Toothbrush",
     "category": "Personal Care",
     "chemicals": [
-      { "name": "BPA (Bisphenol A)", "info": "Found in some plastics; potential endocrine disruptor." },
-      { "name": "Fragrance", "info": "Used in scented handles/packaging; potential allergen." }
+      { "name": "BPA (Bisphenol A)", "info": "Found in some plastics; potential endocrine disruptor.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Bisphenol_A.svg/1200px-Bisphenol_A.svg.png" },
+      { "name": "Fragrance", "info": "Used in scented handles/packaging; potential allergen.", "image": "https://images.pexels.com/photos/1007023/pexels-photo-1007023.jpeg" }
     ],
     "alternatives": [
       "Bamboo toothbrush",
@@ -268,8 +268,8 @@
     "name": "Vaseline Intensive Care Lotion",
     "category": "Personal Care",
     "chemicals": [
-      { "name": "Petroleum", "info": "Occlusive moisturizing agent derived from crude oil; can clog pores." },
-      { "name": "Parabens", "info": "Preservatives (e.g., Propylparaben); potential endocrine disruptor." }
+      { "name": "Petroleum", "info": "Occlusive moisturizing agent derived from crude oil; can clog pores.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Vaseline-jar.jpg/1280px-Vaseline-jar.jpg" },
+      { "name": "Parabens", "info": "Preservatives (e.g., Propylparaben); potential endocrine disruptor.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Propylparaben.svg/1200px-Propylparaben.svg.png" }
     ],
     "alternatives": [
       "Shea Butter/Cocoa Butter lotion",
@@ -280,8 +280,8 @@
     "name": "Febreze Air Freshener",
     "category": "Household",
     "chemicals": [
-      { "name": "Phthalates", "info": "Often used to make scent linger; endocrine disruptor." },
-      { "name": "Formaldehyde", "info": "A respiratory irritant and known carcinogen." }
+      { "name": "Phthalates", "info": "Often used to make scent linger; endocrine disruptor.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Phthalate-general.svg/1200px-Phthalate-general.svg.png" },
+      { "name": "Formaldehyde", "info": "A respiratory irritant and known carcinogen.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Formaldehyde-2D-dimensions.svg/1200px-Formaldehyde-2D-dimensions.svg.png" }
     ],
     "alternatives": [
       "Essential oil diffuser",
@@ -292,8 +292,8 @@
     "name": "Clorox Disinfecting Wipes",
     "category": "Household",
     "chemicals": [
-      { "name": "Quaternary Ammonium Compounds (Quats)", "info": "Powerful disinfectant; linked to asthma and dermatitis." },
-      { "name": "Fragrance", "info": "Can cause respiratory irritation in confined spaces." }
+      { "name": "Quaternary Ammonium Compounds (Quats)", "info": "Powerful disinfectant; linked to asthma and dermatitis.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Cetrimonium_bromide_structure.svg/1200px-Cetrimonium_bromide_structure.svg.png" },
+      { "name": "Fragrance", "info": "Can cause respiratory irritation in confined spaces.", "image": "https://images.pexels.com/photos/1007023/pexels-photo-1007023.jpeg" }
     ],
     "alternatives": [
       "White vinegar solution + steam mop",
@@ -304,8 +304,8 @@
     "name": "Gillette Shaving Foam",
     "category": "Personal Care",
     "chemicals": [
-      { "name": "Triethanolamine (TEA)", "info": "pH balancer and foaming agent; can form nitrosamines (carcinogens) when mixed with nitrates." },
-      { "name": "BHT (Butylated Hydroxytoluene)", "info": "Antioxidant preservative; potential endocrine disruptor." }
+      { "name": "Triethanolamine (TEA)", "info": "pH balancer and foaming agent; can form nitrosamines (carcinogens) when mixed with nitrates.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Triethanolamine.svg/1200px-Triethanolamine.svg.png" },
+      { "name": "BHT (Butylated Hydroxytoluene)", "info": "Antioxidant preservative; potential endocrine disruptor.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Butylated_hydroxytoluene.svg/1200px-Butylated_hydroxytoluene.svg.png" }
     ],
     "alternatives": [
       "Shaving soap/cream bar",
@@ -316,8 +316,8 @@
     "name": "Amul Butter",
     "category": "Food & Beverages",
     "chemicals": [
-      { "name": "Annatto/Coloring agents", "info": "A natural coloring agent (E160b); can cause allergic reactions in sensitive individuals." },
-      { "name": "Salt/Sodium Chloride", "info": "Added for preservation and flavor; excess intake is linked to high blood pressure." }
+      { "name": "Annatto/Coloring agents", "info": "A natural coloring agent (E160b); can cause allergic reactions in sensitive individuals.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Achiote_seeds.jpg/1920px-Achiote_seeds.jpg" },
+      { "name": "Salt/Sodium Chloride", "info": "Added for preservation and flavor; excess intake is linked to high blood pressure.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sodium-chloride-crystal-Simple-cubic-unit-cell-3D-balls.png/1200px-Sodium-chloride-crystal-Simple-cubic-unit-cell-3D-balls.png" }
     ],
     "alternatives": [
       "Homemade white butter",
@@ -328,8 +328,8 @@
     "name": "Fevicol MR Adhesive",
     "category": "Household",
     "chemicals": [
-      { "name": "Formaldehyde", "info": "Trace amount carcinogen; irritating to eyes, nose, and throat." },
-      { "name": "Volatile Organic Compounds (VOCs)", "info": "Solvents released during curing; contributes to poor indoor air quality." }
+      { "name": "Formaldehyde", "info": "Trace amount carcinogen; irritating to eyes, nose, and throat.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Formaldehyde-2D-dimensions.svg/1200px-Formaldehyde-2D-dimensions.svg.png" },
+      { "name": "Volatile Organic Compounds (VOCs)", "info": "Solvents released during curing; contributes to poor indoor air quality.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Volatile_organic_compounds.svg/1200px-Volatile_organic_compounds.svg.png" }
     ],
     "alternatives": [
       "Non-toxic PVA glue (certified safe)",
@@ -340,8 +340,8 @@
     "name": "Tide Pods Detergent",
     "category": "Household",
     "chemicals": [
-      { "name": "High-concentration Surfactants", "info": "Highly concentrated cleaners; toxic if ingested and harsh on sensitive skin." },
-      { "name": "Dyes", "info": "Added for aesthetic purposes; potential skin sensitizers." }
+      { "name": "High-concentration Surfactants", "info": "Highly concentrated cleaners; toxic if ingested and harsh on sensitive skin.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Surfactant_Head-Tail_Structure.svg/1200px-Surfactant_Head-Tail_Structure.svg.png" },
+      { "name": "Dyes", "info": "Added for aesthetic purposes; potential skin sensitizers.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Various_dyes.jpg/1280px-Various_dyes.jpg" }
     ],
     "alternatives": [
       "Concentrated non-bio liquid (less harsh)",
@@ -352,8 +352,8 @@
     "name": "Dettol Hand Wash",
     "category": "Personal Care",
     "chemicals": [
-      { "name": "Triclosan", "info": "Antibacterial agent; linked to endocrine disruption and resistance." },
-      { "name": "SLS (Sodium Lauryl Sulfate)", "info": "Common detergent; can cause dryness and skin irritation." }
+      { "name": "Triclosan", "info": "Antibacterial agent; linked to endocrine disruption and resistance.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Triclosan.svg/1200px-Triclosan.svg.png" },
+      { "name": "SLS (Sodium Lauryl Sulfate)", "info": "Common detergent; can cause dryness and skin irritation.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Sodium_dodecyl_sulfate.svg/1200px-Sodium_dodecyl_sulfate.svg.png" }
     ],
     "alternatives": [
       "Simple soap bar (Triclosan-free)",
@@ -364,8 +364,8 @@
     "name": "Heinz Tomato Ketchup",
     "category": "Food & Beverages",
     "chemicals": [
-      { "name": "High Fructose Corn Syrup (HFCS)", "info": "Primary sweetener; associated with metabolic issues in excess." },
-      { "name": "Added Sugars", "info": "High concentration of sugar; contributes to obesity and poor dental health." }
+      { "name": "High Fructose Corn Syrup (HFCS)", "info": "Primary sweetener; associated with metabolic issues in excess.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/High-fructose-corn-syrup.jpg/1280px-High-fructose-corn-syrup.jpg" },
+      { "name": "Added Sugars", "info": "High concentration of sugar; contributes to obesity and poor dental health.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Sucre_blanc_cassonade_complet_rapadura.jpg/1280px-Sucre_blanc_cassonade_complet_rapadura.jpg" }
     ],
     "alternatives": [
       "Homemade tomato puree",

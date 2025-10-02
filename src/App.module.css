@@ -15,3 +15,12 @@
   font-size: 1.25rem;
   color: #4a5568;
 }
+.appWrapper {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  /* Add the blur effect here */
+  backdrop-filter: blur(50px); /* Adjust the pixel value for more or less blur */
+  -webkit-backdrop-filter: blur(50px); /* For Safari compatibility */
+}

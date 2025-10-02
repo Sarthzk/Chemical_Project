@@ -1,466 +1,145 @@
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  font-family: 'Inter', sans-serif;
-  background-color: #121212; /* Dark Mode Base */
-  color: #e0e0e0; /* Light Text */
+.main {
+  flex-grow: 1;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #101c22;
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+.heroContainer {
   position: relative;
+  isolation: isolate;
+  padding-top: 3.5rem;
+  padding-bottom: 6rem;
   overflow: hidden;
-  padding-bottom: 100px; 
+  display: flex; /* Added for vertical centering */
+  align-items: center; /* Added for vertical centering */
+  min-height: calc(82.5vh - 150px); /* Adjust based on nav/footer height */
 }
 
-/* Decorative SVG background shapes - Muted */
-.wrapper::before {
-  content: "";
+@media (min-width: 1024px) {
+  .heroContainer {
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.gradientTop,
+.gradientBottom {
   position: absolute;
-  top: -80px;
-  right: -80px;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle at 70% 30%, #4c51bf 0%, transparent 70%); /* Muted Indigo Accent */
-  opacity: 0.2;
-  z-index: 0;
+  inset-inline-start: 0;
+  z-index: -10;
+  transform: translateZ(0);
+  overflow: hidden;
+  filter: blur(48px);
 }
 
-.wrapper::after {
-  content: "";
-  position: absolute;
-  bottom: -100px;
-  left: -100px;
-  width: 250px;
-  height: 250px;
-  background: radial-gradient(circle at 30% 70%, #14b8a6 0%, transparent 70%); /* Muted Teal Accent */
-  opacity: 0.2;
-  z-index: 0;
+.gradientTop { top: -10rem; }
+.gradientBottom { top: calc(100% - 13rem); }
+
+@media (min-width: 640px) {
+  .gradientTop { top: -20rem; }
+  .gradientBottom { top: calc(100% - 30rem); }
 }
 
-.hero {
-  text-align: center;
-  margin-bottom: 40px;
+.gradientShape {
   position: relative;
-  z-index: 1;
+  aspect-ratio: 1155 / 678;
+  width: 36.125rem;
+  background-image: linear-gradient(to top right, #80ff89, #13a4ec);
+  opacity: 0.2;
+  clip-path: polygon(
+    74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%,
+    80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%,
+    47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%,
+    17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%
+  );
 }
+
+.gradientTop .gradientShape {
+  left: calc(50% - 11rem);
+  transform: translateX(-50%) rotate(30deg);
+}
+.gradientBottom .gradientShape {
+  left: calc(50% + 3rem);
+  transform: translateX(-50%);
+}
+
+@media (min-width: 640px) {
+  .gradientTop .gradientShape {
+    left: calc(50% - 30rem);
+    width: 72.1875rem;
+  }
+  .gradientBottom .gradientShape {
+    left: calc(50% + 36rem);
+    width: 72.1875rem;
+  }
+}
+
+.contentWrapper {
+  margin: 0 auto;
+  max-width: 64rem;
+  padding: 0 1.5rem;
+}
+
+.textCenter { text-align: center; }
 
 .title {
-  font-size: 3.5rem; /* Increased size: 3.5rem */
-  font-weight: 800; /* Bold weight for impact */
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-  /* Removed gradient for cleaner look */
-  color: #14b8a6; /* Solid Teal Color */
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #f9fafb;
+}
+
+@media (min-width: 640px) {
+  .title { font-size: 3.75rem; line-height: 1; }
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  color: #a0a0a0; /* Lighter grey for subtitle */
-  max-width: 600px;
-  margin: 0 auto 20px;
-  position: relative;
-  z-index: 1;
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #9ca3af;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.ctaButtons {
-  margin-top: 20px;
-  position: relative;
-  z-index: 1;
-}
-
-/* Primary CTA Button (Survey) */
-.btn {
-  background-color: #4c51bf; /* Muted Indigo */
-  color: #1e1e2c; 
-  padding: 12px 24px;
-  margin: 8px;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-.btn:hover {
-  background-color: #14b8a6; /* Muted Teal hover */
-  transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 4px 20px rgba(20, 184, 166, 0.3);
-}
-
-/* Secondary CTA Button (Explore) */
-.btnSecondary { 
-  background-color: transparent;
-  color: #14b8a6; /* Muted Teal text */
-  padding: 12px 24px;
-  margin: 8px;
-  border: 2px solid #14b8a6;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s, transform 0.2s;
-  box-shadow: 0 2px 8px rgba(20, 184, 166, 0.1);
-}
-
-.btnSecondary:hover {
-  background-color: #14b8a6;
-  color: #1e1e2c; 
-  transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 4px 16px rgba(20, 184, 166, 0.3);
-}
-
-/* --- Search Section Styles --- */
-.searchBox {
-  text-align: center;
-  margin: 50px 0;
-  position: relative;
-  z-index: 1;
-  padding: 40px; 
-  background: #28283d; /* Dark secondary background */
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
-  max-width: 650px; 
-  width: 90%;
-  border: 1px solid #3a3a50; 
-}
-
-.searchBox h2 {
-    font-size: 2rem; 
-    color: #4c51bf; /* Highlight search section title (Indigo) */
-    margin-bottom: 25px;
-    font-weight: 700;
-}
-
-.searchBar {
+.buttonGroup {
+  margin-top: 2.5rem;
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 10px;
-  gap: 10px;
+  gap: 1.5rem;
 }
 
-.searchBar input {
-  padding: 12px 18px; 
-  width: 300px; 
-  border-radius: 8px;
-  border: 2px solid #4c51bf; 
-  background-color: #1e1e2c; 
-  color: #e0e0e0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
-  transition: border-color 0.3s;
-}
-
-.searchBar input:focus {
-    border-color: #14b8a6;
-    outline: none;
-}
-
-.searchBar button {
-  padding: 12px 24px; 
-  border-radius: 8px;
-  background-color: #4c51bf;
-  color: #1e1e2c;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.1s;
+.primaryButton {
+  border-radius: 0.5rem;
+  background-color: #13a4ec;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 600;
+  color: white;
+  box-shadow: 0 0 15px rgba(19, 164, 236, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-.searchBar button:hover {
-  background: linear-gradient(90deg, #4c51bf 80%, #14b8a6 100%);
-  transform: translateY(-1px);
+.primaryButton:hover {
+  background-color: #0e86c4;
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(19, 164, 236, 0.6);
 }
 
-/* --- Search Result Card Styles (content remains same) --- */
-.resultCard {
-  background-color: #28283d; 
-  padding: 30px; 
-  margin: 35px auto 0;
-  max-width: 600px;
-  border-radius: 14px; 
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-  text-align: left;
-  border-left: 8px solid #14b8a6; 
-  transition: all 0.3s;
-  color: #e0e0e0;
+.secondaryButton {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #f9fafb;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
-
-.resultName {
-    font-size: 1.5rem;
-    color: #14b8a6;
-    margin-bottom: 5px;
-    border-bottom: 1px solid #3a3a50;
-    padding-bottom: 10px;
-}
-
-.resultCategory {
-    color: #a0a0a0; 
-    font-style: italic;
-    margin-bottom: 20px;
-    font-size: 1rem;
-}
-
-.resultContent {
-    margin-bottom: 20px;
-}
-
-.chemicalDetail {
-    background: #1e1e2c; 
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #3a3a50;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-}
-
-.chemicalDetail p {
-    margin: 4px 0;
-    line-height: 1.4;
-    color: #e0e0e0;
-    font-size: 0.95rem;
-}
-
-.chemicalDetail strong {
-    color: #4c51bf; 
-    font-weight: 600;
-}
-
-.chemicalInfo {
-    color: #a0a0a0;
-    font-size: 0.9rem;
-    margin-top: 5px !important;
-}
-
-.alternativesSection {
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #3a3a50;
-}
-
-.alternativesSection h4 {
-    color: #14b8a6;
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-.alternativesList {
-    list-style: none; 
-    padding-left: 0;
-}
-
-.alternativesList li {
-    background: #1e1e2c; 
-    padding: 8px 15px;
-    border-radius: 6px;
-    margin-bottom: 8px;
-    color: #e0e0e0;
-    font-weight: 500;
-    border-left: 3px solid #4c51bf;
-}
-
-.notFoundMessage {
-    margin-top: 32px;
-    color: #e0e0e0; 
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 20px;
-    border: 2px dashed #14b8a6;
-    border-radius: 10px;
-    background: #28283d;
-}
-
-.searchPageButton {
-    background-color: #14b8a6; 
-    color: #1e1e2c;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 20px;
-    width: 100%;
-    font-weight: 600;
-}
-
-.searchPageButton:hover {
-    background-color: #4c51bf;
-    color: #e0e0e0;
-}
-/* --- End Search Styles --- */
-
-
-/* --- New Info Card Grid and Animation --- */
-
-.sectionTitle {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #14b8a6;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    text-align: center;
-    border-bottom: 2px solid #4c51bf;
-    padding-bottom: 10px;
-    max-width: 800px;
-    width: 100%;
-}
-
-.infoGrid { /* New Grid Layout */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-  gap: 30px;
-  margin-top: 40px;
-  margin-bottom: 60px;
-  position: relative;
-  z-index: 1;
-  max-width: 900px;
-  width: 100%;
-}
-
-.card {
-  background-color: #28283d; 
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-  text-align: left;
-  border-top: 4px solid #4c51bf; 
-  position: relative;
-  z-index: 1;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
-  color: #e0e0e0;
-  
-  /* Animation on Load */
-  animation: fadeIn 0.8s ease-out both; 
-  animation-delay: var(--delay); 
-}
-
-/* Staggered animation delays */
-.card:nth-child(1) { --delay: 0.1s; }
-.card:nth-child(2) { --delay: 0.3s; }
-.card:nth-child(3) { --delay: 0.5s; }
-.card:nth-child(4) { --delay: 0.7s; }
-
-
-.card h2 {
-  color: #14b8a6;
-  font-size: 1.5rem; 
-  margin-top: 0;
-}
-
-.card p {
-    color: #a0a0a0;
-}
-
-.card:hover {
-    transform: translateY(-5px) scale(1.02); /* Noticing hover animation */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-}
-
-/* Keyframe Animation Definition */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* --- CTA Grid styles (content remains same) --- */
-.ctaGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 900px;
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.ctaCardLink {
-    text-decoration: none;
-    color: inherit;
-}
-
-.ctaCard {
-    background-color: #28283d; 
-    padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    text-align: center;
-    border: 1px solid #4c51bf;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s, box-shadow 0.3s;
-    color: #e0e0e0;
-}
-
-.ctaCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(20, 184, 166, 0.4);
-    border-color: #14b8a6;
-}
-
-.ctaCard h3 {
-    color: #14b8a6;
-    margin-top: 0;
-    font-size: 1.4rem;
-}
-
-.ctaCard p {
-    color: #a0a0a0;
-    margin-bottom: 20px;
-}
-
-.ctaBtn {
-    background-color: #4c51bf;
-    color: #1e1e2c;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    margin-top: auto; 
-}
-
-.ctaBtn:hover {
-    background-color: #14b8a6;
-    color: #1e1e2c;
-}
-
-/* Other unused utility styles */
-.divider {
-  width: 80px;
-  height: 6px;
-  background: linear-gradient(90deg, #14b8a6 0%, #4c51bf 100%);
-  border-radius: 3px;
-  margin: 40px auto;
-  opacity: 0.7;
-}
-
-.centerCard {
-  background: #28283d;
-  border-radius: 18px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  padding: 40px 32px;
-  max-width: 520px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  z-index: 2;
-  color: #e0e0e0;
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .infoGrid {
-    grid-template-columns: 1fr; /* Stack cards vertically on mobile */
-  }
+.secondaryButton:hover {
+  color: #13a4ec;
 }

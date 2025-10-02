@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import styles from './Survey.module.css';
-//import ReturnHomeButton from "../components/ReturnHomeButton";
-// import TopWave from "../components/TopWave"; // Removed TopWave
 
 const surveyQuestions = [
   {
@@ -29,41 +27,31 @@ const surveyQuestions = [
     options: ["Yes, always", "Sometimes", "Rarely", "Never"],
     scores: [0, 1, 2, 3]
   },
-  {
-    question: "Do you buy fragrance-free or chemical-free products?",
-    options: ["Always", "Sometimes", "Rarely", "Never"],
-    scores: [3, 2, 1, 0]
-  },
-  {
-    question: "Do you check for safety certifications on products?",
-    options: ["Always", "Sometimes", "Rarely", "Never heard of it"],
-    scores: [3, 2, 1, 0]
-  },
-  {
-    question: "How often do you research chemicals in products you use?",
-    options: ["Always", "Sometimes", "Rarely", "Never"],
-    scores: [3, 2, 1, 0]
-  },
-  {
-    question: "Do you use DIY/home remedies instead of chemical cleaners?",
-    options: ["Always", "Sometimes", "Rarely", "Never"],
-    scores: [3, 2, 1, 0]
-  },
-  {
-    question: "Do you follow any pages/accounts related to chemical safety?",
-    options: ["Yes, many", "A few", "Not really", "No"],
-    scores: [3, 2, 1, 0]
-  }
 ];
 
 function Survey() {
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState(Array(surveyQuestions.length).fill(null));
-  const [submitted, setSubmitted] = useState(false);
+  const [showResult, setShowResult] = useState(false);
 
-  const handleOptionSelect = (qIndex, optionIndex) => {
-    const updatedAnswers = [...answers];
-    updatedAnswers[qIndex] = optionIndex;
-    setAnswers(updatedAnswers);
+  const handleOptionSelect = (optionIndex) => {
+    const newAnswers = [...answers];
+    newAnswers[currentQuestionIndex] = optionIndex;
+    setAnswers(newAnswers);
+  };
+
+  const handleNextQuestion = (e) => {
+    e.preventDefault();
+    if (answers[currentQuestionIndex] === null) {
+      alert("Please select an answer before proceeding.");
+      return;
+    }
+
+    if (currentQuestionIndex < surveyQuestions.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+    } else {
+      setShowResult(true);
+    }
   };
 
   const calculateScore = () => {
@@ -75,72 +63,87 @@ function Survey() {
     }, 0);
   };
 
-  const handleSubmit = () => {
-    if (answers.includes(null)) {
-      alert("Please answer all questions.");
-      return;
-    }
-    setSubmitted(true);
-  };
-
   const totalScore = calculateScore();
   const maxScore = surveyQuestions.length * 3;
-   const percentage = Math.round((totalScore / maxScore) * 100);
+  const percentage = Math.round((totalScore / maxScore) * 100);
+
+  const progress = ((currentQuestionIndex + 1) / surveyQuestions.length) * 100;
 
   return (
-    <div className={styles.wrapper}>
-      {/* TopWave removed */}
+    <main className={styles.main}>
       <div className={styles.container}>
-      <h1 className={styles.title}>🧪 Chemical Awareness Survey</h1>
+        <div className={styles.header}>
+          <h2 className={styles.title}>Chemical Awareness Survey</h2>
+          <p className={styles.subtitle}>
+            Assess your understanding of chemicals in everyday life and their impact on health and the environment.
+          </p>
+        </div>
 
-      {!submitted ? (
-        <>
-          {surveyQuestions.map((q, qIndex) => (
-            <div key={qIndex} className={styles.questionCard}>
-              <h3>{q.question}</h3>
-              <div className={styles.options}>
-                {q.options.map((opt, optIndex) => (
-                  <button
-                    key={optIndex}
-                    className={`${styles.optionBtn} ${answers[qIndex] === optIndex ? styles.selected : ""}`}
-                    onClick={() => handleOptionSelect(qIndex, optIndex)}
-                  >
-                    {opt}
-                  </button>
-                ))}
+        <div className={styles.surveyFormContainer}>
+          {showResult ? (
+            <div className={styles.resultCard}>
+              <h2>Your Awareness Score: {percentage}%</h2>
+              <p>
+                {percentage >= 80
+                  ? "🔥 You're a Chemical Safety Pro!"
+                  : percentage >= 50
+                  ? "🧠 You're aware, but there's more to learn!"
+                  : "😬 Time to start checking those labels!"}
+              </p>
+              <div className={styles.resultActions}>
+                <a href="/knowledge" className={styles.actionButton}>
+                  Increase Your Knowledge
+                </a>
+                <a href="/quiz" className={styles.actionButton}>
+                  Test Yourself (Quiz)
+                </a>
               </div>
             </div>
-          ))}
+          ) : (
+            <>
+              {/* Progress Bar */}
+              <div>
+                <div className={styles.progressHeader}>
+                  <p className={styles.progressText}>Progress</p>
+                  <p className={styles.progressCount}>{currentQuestionIndex + 1}/{surveyQuestions.length} Questions</p>
+                </div>
+                <div className={styles.progressBarBackground}>
+                  <div className={styles.progressBarForeground} style={{ width: `${progress}%` }}></div>
+                </div>
+              </div>
 
-          <button onClick={handleSubmit} className={styles.submitBtn}>See My Awareness Score</button>
-        </>
-      ) : (
-        <div className={styles.resultCard}>
-            <h2>Your Awareness Score: {percentage}%</h2>
-<p>
-  {percentage >= 80
-    ? "🔥 You're a Chemical Safety Pro!"
-    : percentage >= 50
-    ? "🧠 You're aware, but there's more to learn!"
-    : "😬 Time to start checking those labels, Sarthak!"}
-</p>
-    <button
-  onClick={() => window.location.href = "/knowledge"}
-  className={styles.learnMoreBtn}
->
-  Increase Your Chemical Knowledge
-</button>        
-<button
-  onClick={() => window.location.href = "/quiz"}
-  className={styles.quizBtn}
->
-  Test Your Knowledge (Quiz)
-</button>   
+              {/* Form */}
+              <form className={styles.form} onSubmit={handleNextQuestion}>
+                <div className={styles.questionBlock}>
+                  <label className={styles.questionLabel}>
+                    {`${currentQuestionIndex + 1}. ${surveyQuestions[currentQuestionIndex].question}`}
+                  </label>
+                  <div className={styles.optionsGrid}>
+                    {surveyQuestions[currentQuestionIndex].options.map((option, index) => (
+                      <button
+                        key={index}
+                        type="button"
+                        onClick={() => handleOptionSelect(index)}
+                        className={`${styles.optionButton} ${answers[currentQuestionIndex] === index ? styles.selected : ''}`}
+                      >
+                        {option}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className={styles.nextButtonContainer}>
+                  <button type="submit" className={styles.nextButton}>
+                    <span>{currentQuestionIndex < surveyQuestions.length - 1 ? 'Next Question' : 'Finish Survey'}</span>
+                    <span className="material-symbols-outlined">arrow_forward</span>
+                  </button>
+                </div>
+              </form>
+            </>
+          )}
         </div>
-      )}
-      {/* <ReturnHomeButton /> */}
-    </div>
-    </div>
+      </div>
+    </main>
   );
 }
 

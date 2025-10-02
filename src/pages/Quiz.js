@@ -13,19 +13,19 @@ const quizData = [
     answer: "SLS"
   },
   {
-    question: "What are parabens used for in cosmetics?",
+    question: "What are parabens primarily used for in cosmetics?",
     options: ["Coloring", "Preservatives", "Scent", "Foam"],
     answer: "Preservatives"
   },
   {
-    question: "Which chemical is harmful to aquatic life?",
+    question: "Which of these, found in detergents, is particularly harmful to aquatic life?",
     options: ["BPA", "Triclosan", "Phosphates", "Ethanol"],
     answer: "Phosphates"
   },
   {
-    question: "Which chemical was banned in hand soaps for causing resistance?",
-    options: ["Triclosan", "Parabens", "Aluminum", "Mercury"],
-    answer: "Triclosan"
+    question: "Triclosan was banned in many hand soaps because it can contribute to what problem?",
+    options: ["Antibiotic Resistance", "Skin Discoloration", "Hair Loss", "Plastic Erosion"],
+    answer: "Antibiotic Resistance"
   }
 ];
 
@@ -41,7 +41,7 @@ function Quiz() {
       setScore(score + 1);
     }
 
-    // Delay to show feedback
+    // Delay to show feedback before moving to the next question or results
     setTimeout(() => {
       if (current + 1 < quizData.length) {
         setCurrent(current + 1);
@@ -49,7 +49,7 @@ function Quiz() {
       } else {
         setShowResult(true);
       }
-    }, 2000);
+    }, 1500);
   };
 
   const resetQuiz = () => {
@@ -60,57 +60,57 @@ function Quiz() {
   };
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Chemical Safety Quiz</h1>
-
-      {showResult ? (
-        <div className={styles.result}>
-          <h2>Your Score: {score} / {quizData.length}</h2>
-          <button className={styles.resetBtn} onClick={resetQuiz}>Try Again</button>
+    <main className={styles.main}>
+      <div className={styles.container}>
+        <div className={styles.header}>
+            <h1 className={styles.title}>🧠 Chemical Safety Quiz</h1>
+            <p className={styles.subtitle}>Test your knowledge and see how much you've learned about common chemicals.</p>
         </div>
-      ) : (
-        <div className={styles.quizBox}>
-          <h3>{quizData[current].question}</h3>
-          <div className={styles.options}>
-            {quizData[current].options.map((option, index) => {
-              const isCorrect = option === quizData[current].answer;
-              const isSelected = option === selected;
 
-              let buttonClass = styles.optionBtn;
-
-              if (selected) {
-                if (isCorrect) buttonClass += ` ${styles.correct}`;
-                else if (isSelected) buttonClass += ` ${styles.wrong}`;
-              }
-
-              return (
-                <button
-                  key={index}
-                  onClick={() => handleAnswer(option)}
-                  className={buttonClass}
-                  disabled={!!selected}
-                >
-                  {option}
-                </button>
-              );
-            })}
+        {showResult ? (
+          <div className={`${styles.quizBox} ${styles.resultBox}`}>
+            <h2>Quiz Complete!</h2>
+            <p className={styles.scoreText}>Your Score: {score} / {quizData.length}</p>
+            <p className={styles.resultMessage}>
+                {score / quizData.length >= 0.8 ? "Excellent! You're a chemical expert." : "Good effort! There's always more to learn."}
+            </p>
+            <button className={styles.resetBtn} onClick={resetQuiz}>
+              Try Again
+            </button>
           </div>
-
-          {/* ✅ Feedback message */}
-          {selected && (
-            <div className={styles.feedback}>
-              {selected === quizData[current].answer ? (
-                <p className={styles.correctText}>✅ Correct!</p>
-              ) : (
-                <p className={styles.wrongText}>
-                  ❌ Wrong! The correct answer is: <strong>{quizData[current].answer}</strong>
-                </p>
-              )}
+        ) : (
+          <div className={styles.quizBox}>
+            <div className={styles.progressHeader}>
+                <p className={styles.progressText}>Question {current + 1} of {quizData.length}</p>
             </div>
-          )}
-        </div>
-      )}
-    </div>
+            <h3 className={styles.questionText}>{quizData[current].question}</h3>
+            <div className={styles.options}>
+              {quizData[current].options.map((option, index) => {
+                let buttonClass = styles.optionBtn;
+                if (selected) {
+                  if (option === quizData[current].answer) {
+                    buttonClass += ` ${styles.correct}`;
+                  } else if (option === selected) {
+                    buttonClass += ` ${styles.wrong}`;
+                  }
+                }
+
+                return (
+                  <button
+                    key={index}
+                    onClick={() => handleAnswer(option)}
+                    className={buttonClass}
+                    disabled={!!selected}
+                  >
+                    {option}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </div>
+    </main>
   );
 }
 

@@ -1,117 +1,224 @@
-.wrapper {
-  position: relative; 
-  min-height: 100vh;
-  background-color: #121212;
+.main {
+  padding: 3rem 1rem;
+  background-color: #101c22;
+  color: #e5e7eb;
+  font-family: "Space Grotesk", sans-serif;
+  min-height: calc(87vh - 75px);
+  position: relative;
+}
+
+/* Optional: Adds the subtle background pattern from the design */
+.main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/double-bubble-outline.png');
+  opacity: 0.05;
+  z-index: 0;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 42rem; /* 672px */
   margin: 0 auto;
-  padding: 40px 20px;
-  font-family: 'Segoe UI', sans-serif;
+  position: relative; /* To stay above the background pattern */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .title {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 30px;
-  color: #14b8a6; /* Muted Teal Title */
+  font-size: 2.25rem; /* 36px */
+  font-weight: 700;
+  color: #f9fafb;
+  letter-spacing: -0.025em;
 }
 
-.questionCard {
-  background: #28283d;
-  border-radius: 12px;
-  padding: 25px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-  color: #e0e0e0;
+@media (min-width: 640px) {
+  .title {
+    font-size: 2.5rem; /* 40px */
+  }
 }
 
-.options {
+.subtitle {
+  margin-top: 1rem;
+  font-size: 1.125rem; /* 18px */
+  color: #9ca3af;
+}
+
+.surveyFormContainer {
+  background-color: rgba(17, 24, 39, 0.4); /* Equivalent to dark:bg-gray-900/30 */
+  backdrop-filter: blur(8px);
+  border-radius: 0.75rem; /* xl */
+  padding: 1.5rem;
+  border: 1px solid #374151; /* dark:border-gray-800 */
+}
+
+@media (min-width: 640px) {
+  .surveyFormContainer {
+    padding: 2rem;
+  }
+}
+
+/* --- Progress Bar --- */
+.progressHeader {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
-.optionBtn {
-  background-color: #1e1e2c; 
-  border: 1px solid #3a3a50;
-  color: #e0e0e0;
-  padding: 10px 16px;
-  margin: 0;
-  border-radius: 8px;
-  font-size: 16px;
+.progressText {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #d1d5db;
+}
+
+.progressCount {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #13a4ec;
+}
+
+.progressBarBackground {
+  width: 100%;
+  background-color: #374151; /* dark:bg-gray-700 */
+  border-radius: 9999px;
+  height: 0.625rem;
+}
+
+.progressBarForeground {
+  background-color: #13a4ec;
+  height: 0.625rem;
+  border-radius: 9999px;
+  transition: width 0.4s ease;
+}
+
+/* --- Form Elements --- */
+.form {
+  margin-top: 2rem;
+}
+
+.questionBlock {
+  margin-bottom: 2rem;
+}
+
+.questionLabel {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #f9fafb;
+  margin-bottom: 1rem;
+}
+
+.optionsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.optionButton {
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  color: #d1d5db;
+  font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: all 0.2s ease-in-out;
 }
 
-.optionBtn:hover {
-  background-color: #3a3a50;
-  color: #14b8a6; /* Muted Teal Hover */
-  transform: scale(1.02);
+.optionButton:hover {
+  background-color: rgba(19, 164, 236, 0.2);
+  border-color: #13a4ec;
+  color: #13a4ec;
 }
 
-.selected {
-  background-color: #4c51bf !important; /* Muted Indigo Selected */
-  color: #1e1e2c;
-  border-color: #4c51bf;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
-}
-
-.submitBtn {
-  margin-top: 30px;
-  background-color: #4c51bf; 
-  color: #1e1e2c;
-  padding: 14px 28px;
-  border: none;
-  border-radius: 10px;
-  font-size: 1.1rem;
+.optionButton.selected {
+  background-color: rgba(19, 164, 236, 0.3);
+  border-color: #13a4ec;
+  color: #13a4ec;
   font-weight: 700;
+  box-shadow: 0 0 10px rgba(19, 164, 236, 0.3);
+}
+
+.nextButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+
+.nextButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #13a4ec;
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
-.submitBtn:hover {
-    background-color: #14b8a6;
-    color: #1e1e2c;
+.nextButton:hover {
+  background-color: rgba(19, 164, 236, 0.9);
+  transform: translateY(-2px);
 }
 
+/* --- Result Card --- */
 .resultCard {
   text-align: center;
-  background: #28283d; 
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  padding: 2rem;
 }
 
-.learnMoreBtn {
-  margin-top: 20px;
-  background-color: #22c55e; 
-  color: #1e1e2c;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.2s;
+.resultCard h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f9fafb;
+  margin-bottom: 0.5rem;
 }
 
-.quizBtn {
-    margin-top: 15px;
-    background-color: #14b8a6; /* Muted Teal Quiz Button */
-    color: #1e1e2c;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    margin-left: 15px; 
+.resultCard p {
+  font-size: 1.125rem;
+  color: #9ca3af;
+  margin-bottom: 2rem;
 }
 
-.quizBtn:hover {
-    background-color: #4c51bf;
-    color: #1e1e2c;
+.resultActions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .resultActions {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.actionButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+  background-color: #13a4ec;
+  color: white;
+  border: 1px solid #13a4ec;
+}
+
+.actionButton:hover {
+  background-color: #0e86c4;
+  transform: translateY(-2px);
 }
