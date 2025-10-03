@@ -33,15 +33,15 @@ function About() {
             <div className={styles.teamGrid}>
               <div className={styles.teamMember}>
                 <h4 className={styles.teamName}>Sarthak Mohite</h4>
-                <p className={styles.teamRole}>Computer Engineering Student</p>
+                <p className={styles.teamRole}>Web Devloper</p>
               </div>
               <div className={styles.teamMember}>
                 <h4 className={styles.teamName}>Rushikesh Jadhav</h4>
-                <p className={styles.teamRole}>Computer Engineering Student</p>
+                <p className={styles.teamRole}>Designer</p>
               </div>
               <div className={styles.teamMember}>
                 <h4 className={styles.teamName}>Rushi Khalate</h4>
-                <p className={styles.teamRole}>Computer Engineering Student</p>
+                <p className={styles.teamRole}>Researcher</p>
               </div>
             </div>
           </div>
