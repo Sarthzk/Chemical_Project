@@ -2,6 +2,7 @@
   {
     "name": "Colgate Total Advanced Health Toothpaste",
     "category": "Personal Care",
+    "image": "/images/colgate.jpg",
     "chemicals": [
       { "name": "Sodium Lauryl Sulfate (SLS)", "info": "Foaming detergent; can irritate oral mucosa in some people.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Sodium_dodecyl_sulfate.svg/1200px-Sodium_dodecyl_sulfate.svg.png" },
       { "name": "Sodium Fluoride", "info": "Anti-cavity agent; toxic if swallowed in large amounts.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Sodium_fluoride_3D_ionic.png/1200px-Sodium_fluoride_3D_ionic.png" }
@@ -26,6 +27,7 @@
   {
     "name": "Dove Cream Beauty Bathing Bar",
     "category": "Personal Care",
+    "image": "/images/dove.jpg",
     "chemicals": [
       { "name": "Sodium Cocoyl Isethionate", "info": "Primary cleanser; milder but can irritate very sensitive skin.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Sodium_cocoyl_isethionate.svg/1200px-Sodium_cocoyl_isethionate.svg.png" },
       { "name": "Cocamidopropyl Betaine", "info": "Cleansing/foam booster; known allergen for a small subset.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Cocamidopropyl_betaine.svg/1200px-Cocamidopropyl_betaine.svg.png" }
@@ -38,6 +40,7 @@
   {
     "name": "Head & Shoulders Anti-Dandruff Shampoo",
     "category": "Personal Care",
+    "image": "/images/shampoo.jpg",
     "chemicals": [
       { "name": "Zinc Pyrithione (ZPT)", "info": "Anti-dandruff active; tackles Malassezia yeast.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Pyrithione-zinc-3D-balls.png/1200px-Pyrithione-zinc-3D-balls.png" },
       { "name": "Sodium Laureth Sulfate (SLES)", "info": "Detergent; can be drying/irritating in some users.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sodium_laureth_sulfate.svg/1200px-Sodium_laureth_sulfate.svg.png" }
@@ -62,6 +65,7 @@
   {
     "name": "Nivea Soft Light Moisturizer",
     "category": "Personal Care",
+    "image": "/images/nivea.jpg",
     "chemicals": [
       { "name": "Paraffinum Liquidum (Mineral Oil)", "info": "Occlusive; can feel heavy or comedogenic for some.", "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Paraffin_oil_1l.jpg" },
       { "name": "Alcohol Denat.", "info": "Can be drying/irritating for sensitive skin.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ethanol-2D-flat.svg/1200px-Ethanol-2D-flat.svg.png" }
@@ -74,6 +78,7 @@
   {
     "name": "Surf Excel Matic Front Load Detergent Powder",
     "category": "Household",
+    "image": "/images/surf.jpg",
     "chemicals": [
       { "name": "Sodium Alkylbenzene Sulfonate (LAS)", "info": "Anionic surfactant; harsh to skin & aquatic life.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sodium_dodecylbenzenesulfonate.svg/1920px-Sodium_dodecylbenzenesulfonate.svg.png" },
       { "name": "Optical Brighteners", "info": "Whitening dyes; persistent in environment, can irritate skin.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Stilbene3.svg/1200px-Stilbene3.svg.png" }
@@ -98,6 +103,7 @@
   {
     "name": "Harpic Power Plus Toilet Cleaner",
     "category": "Household",
+    "image": "/images/harpic.jpg",
     "chemicals": [
       { "name": "Hydrochloric Acid (~10.5% w/v)", "info": "Strong acid; corrosive to skin/eyes; fumes irritate airways.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Hydrochloric_acid_3D_ball-and-stick.png/1200px-Hydrochloric_acid_3D_ball-and-stick.png" },
       { "name": "Alkyl Trimethyl Ammonium Chloride", "info": "Quat disinfectant; irritant, careful handling required.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Cetrimonium_bromide_structure.svg/1200px-Cetrimonium_bromide_structure.svg.png" }
@@ -122,6 +128,7 @@
   {
     "name": "Vim Dishwash Gel",
     "category": "Household",
+    "image": "/images/vim.jpg",
     "chemicals": [
       { "name": "Sodium Linear Alkylbenzene Sulfonate (LAS)", "info": "Powerful grease cutter; can irritate/defat skin.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sodium_dodecylbenzenesulfonate.svg/1920px-Sodium_dodecylbenzenesulfonate.svg.png" },
       { "name": "Sodium Laureth Sulfate (SLES)", "info": "Detergent; potential skin/eye irritation.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sodium_laureth_sulfate.svg/1200px-Sodium_laureth_sulfate.svg.png" }
@@ -146,6 +153,7 @@
   {
     "name": "Pepsi",
     "category": "Food & Beverages",
+    "image": "/images/pepsi.jpg",
     "chemicals": [
       { "name": "Phosphoric Acid", "info": "Erosive to tooth enamel over time.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Phosphoric_acid.svg/1200px-Phosphoric_acid.svg.png" },
       { "name": "High Fructose Corn Syrup", "info": "Linked to obesity & metabolic issues with high intake.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/High-fructose-corn-syrup.jpg/1280px-High-fructose-corn-syrup.jpg" }
@@ -158,6 +166,7 @@
   {
     "name": "Diet Coke",
     "category": "Food & Beverages",
+    "image": "/images/diet-coke.jpg",
     "chemicals": [
       { "name": "Aspartame", "info": "Artificial sweetener; highly scrutinized, potentially harmful to those with PKU.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Aspartame_-_Aspartam.svg/1200px-Aspartame_-_Aspartam.svg.png" },
       { "name": "Phosphoric Acid", "info": "Erosive to tooth enamel over time.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Phosphoric_acid.svg/1200px-Phosphoric_acid.svg.png" },
@@ -171,6 +180,7 @@
   {
     "name": "Maggi 2-Minute Noodles Masala",
     "category": "Food & Beverages",
+    "image": "/images/maggi.jpg",
     "chemicals": [
       { "name": "Monosodium Glutamate (MSG)", "info": "Flavor enhancer; safe for most, can cause sensitivity in some.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Monosodium_glutamate.svg/1200px-Monosodium_glutamate.svg.png" },
       { "name": "Tertiary Butylhydroquinone (TBHQ)", "info": "Antioxidant preservative; controversial in high doses.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/TBHQ.svg/1200px-TBHQ.svg.png" }
@@ -183,6 +193,7 @@
   {
     "name": "Lays Magic Masala Chips",
     "category": "Food & Beverages",
+    "image": "/images/lays.jpg",
     "chemicals": [
       { "name": "Monosodium Glutamate (MSG)", "info": "Flavor enhancer; safe but can cause headaches in sensitive people.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Monosodium_glutamate.svg/1200px-Monosodium_glutamate.svg.png" },
       { "name": "Palm Oil", "info": "High in saturated fat; environmental sustainability concerns.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Palm_oil.jpg/1280px-Palm_oil.jpg" }

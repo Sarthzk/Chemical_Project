@@ -1,9 +1,18 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import styles from './Navbar.module.css';
-import Logo from './Logo'; // Import the new Logo component
+import Logo from './Logo';
 
 export default function Navbar() {
+  const [query, setQuery] = useState('');
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    if (e.key === 'Enter' && query.trim() !== '') {
+      navigate(`/search?q=${encodeURIComponent(query)}`);
+    }
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -20,9 +29,17 @@ export default function Navbar() {
           <Link to="/about">About</Link>
         </nav>
         <div className={styles.actions}>
-          <Link to="/explore" className={styles.exploreButton}>
-            Explore Chemicals
-          </Link>
+          <div className={styles.searchContainer}>
+            <span className="material-symbols-outlined">search</span>
+            <input
+              className={styles.searchInput}
+              placeholder="Search for a product..."
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={handleSearch}
+            />
+          </div>
           <button className={styles.menuButton}>
             <span className="sr-only">Open main menu</span>
             <svg

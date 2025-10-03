@@ -1,7 +1,7 @@
-.header {
+\.header {
   width: 100%;
   padding: 0 1rem;
-  box-sizing: border-box; /* Ensures padding is included in the width */
+  box-sizing: border-box;
 }
 
 @media (min-width: 640px) {
@@ -19,7 +19,7 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 84rem; /* This centers the container */
+  max-width: 84rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -36,11 +36,11 @@
 }
 
 .brandText {
-  font-size: 1.5rem; /* Increased from 1.25rem */
+  font-size: 1.5rem;
   line-height: 1.75rem;
   font-weight: 700;
   color: #f9fafb;
-  white-space: nowrap; /* Prevents text from wrapping */
+  white-space: nowrap;
 }
 
 .navLinks {
@@ -51,8 +51,8 @@
   .navLinks {
     display: flex;
     align-items: center;
-    gap: 2rem; /* Increased gap for more spacing */
-    font-size: 1rem; /* Increased from 0.875rem */
+    gap: 2rem;
+    font-size: 1rem;
     line-height: 1.25rem;
     font-weight: 500;
   }
@@ -72,30 +72,6 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.exploreButton {
-  background-color: #13a4ec;
-  color: white;
-  font-weight: 700;
-  font-size: 1rem; /* Increased from 0.875rem */
-  line-height: 1.25rem;
-  padding: 0.6rem 1.5rem;
-  border-radius: 0.5rem;
-  transition: background-color 0.2s;
-  text-decoration: none;
-  display: none; /* Hidden on small screens */
-  white-space: nowrap; /* Prevents text from wrapping */
-}
-
-@media (min-width: 640px) {
-  .exploreButton {
-    display: block;
-  }
-}
-
-.exploreButton:hover {
-  background-color: rgba(19, 164, 236, 0.9);
 }
 
 .menuButton {
@@ -122,7 +98,6 @@
   width: 1.5rem;
 }
 
-/* Helper class for screen readers */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -133,4 +108,47 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.searchContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .searchContainer {
+    max-width: 20rem;
+  }
+}
+
+.searchContainer > span {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(55, 65, 81, 0.8);
+  background-color: #1f2937;
+  padding: 0.6rem 0.6rem 0.6rem 2.5rem;
+  color: #f9fafb;
+  transition: all 0.2s;
+}
+
+.searchInput::placeholder {
+  color: #6b7280;
+}
+
+.searchInput:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: #13a4ec;
+  box-shadow: 0 0 0 2px #13a4ec;
 }
